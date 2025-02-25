@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Logo de la tienda -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo de la tienda">
+        </div>
+        <h1>Tecnology</h1>
+        <nav>
+            <ul>
+                <li><a href="#hogar">Hogar</a></li>
+                <li><a href="#tecnologia">Tecnología</a></li>
+                <li><a href="#ultimo">Lo Último</a></li>
+                <li><a href="#nosotros">Quiénes Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hogar -->
+    <section id="hogar">
+        <h2>Hogar</h2>
+        <div class="producto">
+            <img src="hogar1.jpg" alt="Sofá moderno" class="producto-img">
+            <h3>Sofá Moderno</h3>
+            <p class="precio">$299.99</p>
+            <ul class="caracteristicas">
+                <li>Material: Cuero sintético</li>
+                <li>Color: Gris</li>
+                <li>Dimensiones: 200cm x 90cm x 80cm</li>
+            </ul>
+            <button class="pago" onclick="irAPago()">Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="hogar2.jpg" alt="Lámpara de mesa" class="producto-img">
+            <h3>Lámpara de Mesa</h3>
+            <p class="precio">$49.99</p>
+            <ul class="caracteristicas">
+                <li>Material: Metal y tela</li>
+                <li>Color: Negro</li>
+                <li>Altura: 50cm</li>
+            </ul>
+            <button class="pago" onclick="irAPago()">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Sección Tecnología -->
+    <section id="tecnologia">
+        <h2>Tecnología</h2>
+        <div class="producto">
+            <img src="tecnologia1.jpg" alt="Smartphone XYZ" class="producto-img">
+            <h3>Smartphone XYZ</h3>
+            <p class="precio">$599.99</p>
+            <ul class="caracteristicas">
+                <li>Pantalla: 6.5 pulgadas</li>
+                <li>Memoria: 128GB</li>
+                <li>Cámara: 48MP</li>
+            </ul>
+            <button class="pago" onclick="irAPago()">Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="tecnologia2.jpg" alt="Laptop ABC" class="producto-img">
+            <h3>Laptop ABC</h3>
+            <p class="precio">$899.99</p>
+            <ul class="caracteristicas">
+                <li>Procesador: Intel i7</li>
+                <li>RAM: 16GB</li>
+                <li>Almacenamiento: 512GB SSD</li>
+            </ul>
+            <button class="pago" onclick="irAPago()">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Sección Lo Último -->
+    <section id="ultimo">
+        <h2>Lo Último</h2>
+        <div class="producto">
+            <img src="ultimo1.jpg" alt="Audífonos inalámbricos" class="producto-img">
+            <h3>Audífonos Inalámbricos</h3>
+            <p class="precio">$129.99</p>
+            <ul class="caracteristicas">
+                <li>Bluetooth 5.0</li>
+                <li>Batería: 20 horas</li>
+                <li>Resistente al agua</li>
+            </ul>
+            <button class="pago" onclick="irAPago()">Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="ultimo2.jpg" alt="Smartwatch Pro" class="producto-img">
+            <h3>Smartwatch Pro</h3>
+            <p class="precio">$199.99</p>
+            <ul class="caracteristicas">
+                <li>Pantalla: 1.75 pulgadas</li>
+                <li>Resistente al agua</li>
+                <li>Monitoreo de salud</li>
+            </ul>
+            <button class="pago" onclick="irAPago()">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="nosotros">
+        <h2>Quiénes Somos</h2>
+        <img src="nosotros.jpg" alt="Quiénes somos" class="section-img">
+        <p>Somos una tienda virtual comprometida con ofrecerte los mejores productos para tu hogar, tecnología y más. ¡Gracias por elegirnos!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Tienda Virtual. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function irAPago() {
+            // Redirigir al usuario a una pasarela de pago
+            window.location.href = "https://www.ejemplodepago.com"; // Cambia esto por tu enlace de pago
+        }
+    </script>
+</body>
+</html>
