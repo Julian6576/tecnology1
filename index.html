@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Logo de la tienda -->
+        <div class="logo">
+            <img src="logo.png" alt="Logo de la tienda">
+        </div>
+        <h1>Tienda Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="#hogar">Hogar</a></li>
+                <li><a href="#tecnologia">Tecnología</a></li>
+                <li><a href="#ultimo">Lo Último</a></li>
+                <li><a href="#nosotros">Quiénes Somos</a></li>
+                <li><a href="#carrito">Carrito 🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrusel de imágenes -->
+    <section id="carrusel">
+        <div class="carrusel-contenedor">
+            <div class="carrusel-slide">
+                <img src="hogar1.jpg" alt="Sofá moderno">
+                <img src="tecnologia1.jpg" alt="Smartphone XYZ">
+                <img src="ultimo1.jpg" alt="Audífonos inalámbricos">
+                <img src="hogar2.jpg" alt="Lámpara de mesa">
+                <img src="tecnologia2.jpg" alt="Laptop ABC">
+                <img src="ultimo2.jpg" alt="Smartwatch Pro">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Hogar -->
+    <section id="hogar">
+        <h2>Hogar</h2>
+        <div class="subcategoria">
+            <h3>Muebles</h3>
+            <div class="producto" onclick="mostrarDetalles('Sofá Moderno', 299.99, 'hogar1.jpg', ['hogar1.jpg', 'hogar1-2.jpg', 'hogar1-3.jpg', 'hogar1-4.jpg'], 'Este sofá moderno es perfecto para tu sala de estar. Con un diseño elegante y cómodo, está fabricado en cuero sintético de alta calidad y disponible en varios colores.', ['Material: Cuero sintético', 'Color: Gris', 'Dimensiones: 200cm x 90cm x 80cm', 'Peso: 50kg'])">
+                <img src="hogar1.jpg" alt="Sofá moderno" class="producto-img">
+                <h4>Sofá Moderno</h4>
+                <p class="precio">$299.99</p>
+            </div>
+
+            <div class="producto" onclick="mostrarDetalles('Lámpara de Mesa', 49.99, 'hogar2.jpg', ['hogar2.jpg', 'hogar2-2.jpg', 'hogar2-3.jpg', 'hogar2-4.jpg'], 'Esta lámpara de mesa combina estilo y funcionalidad. Ideal para iluminar tus espacios con elegancia.', ['Material: Metal y tela', 'Color: Negro', 'Altura: 50cm', 'Peso: 3kg'])">
+                <img src="hogar2.jpg" alt="Lámpara de mesa" class="producto-img">
+                <h4>Lámpara de Mesa</h4>
+                <p class="precio">$49.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tecnología -->
+    <section id="tecnologia">
+        <h2>Tecnología</h2>
+        <div class="subcategoria">
+            <h3>Smartphones</h3>
+            <div class="producto" onclick="mostrarDetalles('Smartphone XYZ', 599.99, 'tecnologia1.jpg', ['tecnologia1.jpg', 'tecnologia1-2.jpg', 'tecnologia1-3.jpg', 'tecnologia1-4.jpg'], 'Este smartphone de última generación ofrece un rendimiento excepcional con una cámara de 48MP y pantalla de 6.5 pulgadas.', ['Pantalla: 6.5 pulgadas', 'Memoria: 128GB', 'Cámara: 48MP', 'Batería: 4000mAh'])">
+                <img src="tecnologia1.jpg" alt="Smartphone XYZ" class="producto-img">
+                <h4>Smartphone XYZ</h4>
+                <p class="precio">$599.99</p>
+            </div>
+        </div>
+
+        <div class="subcategoria">
+            <h3>Laptops</h3>
+            <div class="producto" onclick="mostrarDetalles('Laptop ABC', 899.99, 'tecnologia2.jpg', ['tecnologia2.jpg', 'tecnologia2-2.jpg', 'tecnologia2-3.jpg', 'tecnologia2-4.jpg'], 'Esta laptop es ideal para trabajo y entretenimiento, con un potente procesador Intel i7 y 16GB de RAM.', ['Procesador: Intel i7', 'RAM: 16GB', 'Almacenamiento: 512GB SSD', 'Pantalla: 15.6 pulgadas'])">
+                <img src="tecnologia2.jpg" alt="Laptop ABC" class="producto-img">
+                <h4>Laptop ABC</h4>
+                <p class="precio">$899.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Lo Último -->
+    <section id="ultimo">
+        <h2>Lo Último</h2>
+        <div class="subcategoria">
+            <h3>Accesorios</h3>
+            <div class="producto" onclick="mostrarDetalles('Audífonos Inalámbricos', 129.99, 'ultimo1.jpg', ['ultimo1.jpg', 'ultimo1-2.jpg', 'ultimo1-3.jpg', 'ultimo1-4.jpg'], 'Estos audífonos inalámbricos ofrecen una calidad de sonido excepcional y una batería de larga duración.', ['Bluetooth 5.0', 'Batería: 20 horas', 'Resistente al agua', 'Peso: 50g'])">
+                <img src="ultimo1.jpg" alt="Audífonos inalámbricos" class="producto-img">
+                <h4>Audífonos Inalámbricos</h4>
+                <p class="precio">$129.99</p>
+            </div>
+        </div>
+
+        <div class="subcategoria">
+            <h3>Wearables</h3>
+            <div class="producto" onclick="mostrarDetalles('Smartwatch Pro', 199.99, 'ultimo2.jpg', ['ultimo2.jpg', 'ultimo2-2.jpg', 'ultimo2-3.jpg', 'ultimo2-4.jpg'], 'Este smartwatch es perfecto para monitorear tu salud y mantenerte conectado.', ['Pantalla: 1.75 pulgadas', 'Resistente al agua', 'Monitoreo de salud', 'Batería: 7 días'])">
+                <img src="ultimo2.jpg" alt="Smartwatch Pro" class="producto-img">
+                <h4>Smartwatch Pro</h4>
+                <p class="precio">$199.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="nosotros">
+        <h2>Quiénes Somos</h2>
+        <img src="nosotros.jpg" alt="Quiénes somos" class="section-img">
+        <p>Somos una tienda virtual comprometida con ofrecerte los mejores productos para tu hogar, tecnología y más. ¡Gracias por elegirnos!</p>
+    </section>
+
+    <!-- Sección Carrito de Compras -->
+    <section id="carrito">
+        <h2>Carrito de Compras 🛒</h2>
+        <div id="lista-carrito"></div>
+        <p>Total: <span id="total-carrito">$0.00</span></p>
+        <button onclick="procesarPago()">Procesar Pago</button>
+    </section>
+
+    <!-- Sección Redes Sociales -->
+    <section id="redes">
+        <h2>Redes Sociales</h2>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Modal de detalles del producto -->
+    <div id="modal-detalles" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <div class="galeria" id="modal-galeria"></div>
+            <p class="precio" id="modal-precio"></p>
+            <p class="descripcion" id="modal-descripcion"></p>
+            <h3>Características Técnicas</h3>
+            <ul class="caracteristicas" id="modal-caracteristicas"></ul>
+            <button class="agregar-carrito" onclick="agregarAlCarrito()">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Tienda Virtual. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Script para el carrusel de imágenes
+        const carruselSlide = document.querySelector('.carrusel-slide');
+        const imagenes = document.querySelectorAll('.carrusel-slide img');
+
+        let contador = 0;
+        const ancho = imagenes[0].clientWidth;
+
+        function siguienteImagen() {
+            if (contador >= imagenes.length - 1) contador = -1;
+            contador++;
+            carruselSlide.style.transition = "transform 0.5s ease-in-out";
+            carruselSlide.style.transform = `translateX(${-ancho * contador}px)`;
+        }
+
+        setInterval(siguienteImagen, 3000); // Cambia de imagen cada 3 segundos
+
+        // Script para el modal de detalles
+        const modal = document.getElementById('modal-detalles');
+
+        function mostrarDetalles(nombre, precio, imagenPrincipal, imagenes, descripcion, caracteristicas) {
+            document.getElementById('modal-titulo').textContent = nombre;
+            document.getElementById('modal-precio').textContent = `$${precio.toFixed(2)}`;
+            document.getElementById('modal-descripcion').textContent = descripcion;
+
+            const galeria = document.getElementById('modal-galeria');
+            galeria.innerHTML = '';
+            imagenes.forEach((imagen) => {
+                const img = document.createElement('img');
+                img.src = imagen;
+                img.alt = nombre;
+                galeria.appendChild(img);
+            });
+
+            const listaCaracteristicas = document.getElementById('modal-caracteristicas');
+            listaCaracteristicas.innerHTML = '';
+            caracteristicas.forEach((caracteristica) => {
+                const li = document.createElement('li');
+                li.textContent = caracteristica;
+                listaCaracteristicas.appendChild(li);
+            });
+
+            modal.style.display = 'block';
+        }
+
+        function cerrarModal() {
+            modal.style.display = 'none';
+        }
+
+        // Cerrar el modal si se hace clic fuera de él
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+
+        // Script para el carrito de compras
+        let carrito = [];
+        let total = 0;
+
+        function agregarAlCarrito() {
+            const nombre = document.getElementById('modal-titulo').textContent;
+            const precio = parseFloat(document.getElementById('modal-precio').textContent.replace('$', ''));
+            carrito.push({ nombre, precio });
+            total += precio;
+            actualizarCarrito();
+            alert(`${nombre} agregado al carrito.`);
+        }
+
+        function actualizarCarrito() {
+            const listaCarrito = document.getElementById('lista-carrito');
+            const totalCarrito = document.getElementById('total-carrito');
+            listaCarrito.innerHTML = '';
+            carrito.forEach((producto) => {
+                const item = document.createElement('div');
+                item.textContent = `${producto.nombre} - $${producto.precio.toFixed(2)}`;
+                listaCarrito.appendChild(item);
+            });
+            totalCarrito.textContent = `$${total.toFixed(2)}`;
+        }
+
+        function procesarPago() {
+            alert(`Total a pagar: $${total.toFixed(2)}. Redirigiendo a la pasarela de pago...`);
+            // Aquí puedes redirigir a la pasarela de pago
+            window.location.href = "https://www.ejemplodepago.com";
+        }
+    </script>
+</body>
+
+</html>
